@@ -126,6 +126,7 @@ console.log(user2)
 */
 
 //Code Here
+let methodCollection = {}
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
@@ -133,12 +134,20 @@ console.log(user2)
 */
 
 //Code Here
+methodCollection.alertHello = function(){
+  alert ("hello")
+}
+methodCollection.logHello = function(){
+  console.log('hello')
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+methodCollection.alertHello()
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -148,6 +157,14 @@ console.log(user2)
 */
 
 //Code Here
+function makePerson(flName, birth, socialsn){
+  let newPerson = {
+    name : flName,
+    birthday : birth,
+    ssn : socialsn
+  }
+  return newPerson;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -157,3 +174,12 @@ console.log(user2)
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode){
+  let creditCard = {
+    cNumber : cardNumber,
+    eDate : expirationDate,
+    sCode : securityCode
+  }
+  return creditCard
+}

@@ -102,21 +102,8 @@ function evenFinder(nums){
   }
   return array
 }
-
-
-
-
-
-
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
-
-
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -130,6 +117,27 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  let newArray = []
+  let evenArray = []
+  let oddArray = []
+  
+  for(let i = 0; i <= numbersArray.length - 1; i ++){
+    if(numbersArray[i] % 2 === 0){
+      evenArray.push(numbersArray[i])
+      // console.log(evenArray)
+    }
+    else if(numbersArray[i] % 2 !== 0){
+      oddArray.push(numbersArray[i])
+      // console.log(oddArray)
+    }
+  }
+  newArray.push(evenArray);
+  newArray.push(oddArray);
+  console.log(newArray)
+ return newArray
+}
+
 
 
 
@@ -152,6 +160,17 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(arr){
+  let randomNumber = getRandomArbitrary()
+  for(let i = 0; i <= arr.length - 1; i++){
+    if(i === randomNumber){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
 
 
 
@@ -207,6 +226,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(arrayNew){
+  let array = []
+  for(let i = 0; i <= arrayNew.length - 1; i++){
+    array.push[arrayNew[i] + 10]
+    
+  }
+  console.log(array)
+  return array
+}
 
 
 
